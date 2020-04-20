@@ -280,6 +280,13 @@ public class MainActivity extends AppCompatActivity {
         Dialog dilog=new Dialog(MainActivity.this);
         dilog.setCanceledOnTouchOutside(false);
         dilog.setContentView(R.layout.regesterlayout);
+        Button cancel=(Button)findViewById(R.id.cancel);
+        cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dilog.dismiss();
+            }
+        });
         dilog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dilog.show();
     }
