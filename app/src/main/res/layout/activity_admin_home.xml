@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.DCompany.Admin.AdminHome">
+
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navbar"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        app:menu="@menu/main_nevbar_menu" />
+
+    <LinearLayout
+        android:id="@+id/hidenavbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/xmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/menu" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage Attendance"
+        android:textSize="25dp"
+        android:layout_margin="20dp"
+        android:textColor="#000000" />
+    <HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/xcheckattendace"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@drawable/attendancebutton"
+            android:backgroundTint="#0047b3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/attendaceiconhome" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/segoeui"
+                android:gravity="center"
+                android:text="Check
+                 Attendance"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tohollyday"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:backgroundTint="#004d33"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/attendancebutton"
+            android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/holydaybuttonimg"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add
+                    Hollyday"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/segoeui"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tolisthollyday"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:backgroundTint="#001f4d"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/attendancebutton"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/holydaybuttonimg"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="View
+                    Hollyday"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/segoeui"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:backgroundTint="#D4146E"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/attendancebutton"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/holydaybuttonimg"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Check
+                Sallary"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/segoeui"/>
+        </LinearLayout>
+    </LinearLayout>
+</HorizontalScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage Employee"
+        android:textSize="25dp"
+        android:layout_margin="20dp"
+        android:textColor="#000000" />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:gravity="center">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:orientation="vertical"
+                android:backgroundTint="#662200"
+                android:background="@drawable/attendancebutton"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/attendaceiconhome"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Search
+                    Employee"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/segoeui"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:onClick="addemployee"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="#ff9966"
+                android:background="@drawable/attendancebutton"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/attendaceiconhome"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add
+                    Employee"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/segoeui"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:orientation="vertical"
+                android:backgroundTint="#D4146E"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/attendancebutton"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/holydaybuttonimg"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Remove Employee"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/segoeui"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:orientation="vertical"
+                android:backgroundTint="#4d004d"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/attendancebutton"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/holydaybuttonimg"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Update Employee"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/segoeui"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Manage Job"
+    android:textSize="25dp"
+    android:layout_margin="20dp"
+    android:textColor="#000000" />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/addjob"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:orientation="vertical"
+                android:backgroundTint="#4014D4"
+                android:background="@drawable/attendancebutton"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/attendaceiconhome"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Assign Job"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/segoeui"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:orientation="vertical"
+                android:backgroundTint="#D4146E"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/attendancebutton"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/holydaybuttonimg"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Job Details"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/segoeui"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:orientation="vertical"
+                android:backgroundTint="#D4146E"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/attendancebutton"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/holydaybuttonimg"/>
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Job Status"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/segoeui"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
+
+</RelativeLayout>

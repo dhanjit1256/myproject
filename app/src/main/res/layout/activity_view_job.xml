@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/viewjobbackground"
+    tools:context="com.example.DCompany.Job.ViewJob">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:backgroundTint="#ffffff">
+
+                <TextView
+                    android:id="@+id/titlejob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:gravity="center"
+                    android:text="This is a job title we are just testing these for now"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:layout_margin="5dp"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:backgroundTint="#ffffff">
+
+                <TextView
+                    android:id="@+id/detailsjob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:text="This is a job title we  are just t title we are just testingtle we arhs hshdjsd asdghsgd hshs hshs shs shshs  title we are just testing djfhdjhfud jasdjsd asdghsgd hshs hshs shs shshs  title we are just testing djfhdjhfud jasdjsd asdghsgd hshs hshs shs shshs esting djfhdjhfud jasdjsd asdghsgd hshs hshs shs shshs shhs these for now"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoeui"
+                android:textColor="#FFFFFF"
+                android:text="Skill You Need"
+                android:paddingLeft="25dp"
+                android:textStyle="bold"
+                android:textSize="25sp" />
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segoeui"
+                    android:textColor="#000000"
+                    android:background="@drawable/button"
+                    android:backgroundTint="#FFFFFF"
+                    android:padding="10dp"
+                    android:text="HTML- (Hyper Text Markup Language)"
+                    android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                    android:textSize="20sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoeui"
+                android:textColor="#000000"
+                android:background="@drawable/button"
+                android:backgroundTint="#FFFFFF"
+                android:padding="10dp"
+                android:text="Java"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoeui"
+                android:textColor="#000000"
+                android:background="@drawable/button"
+                android:backgroundTint="#FFFFFF"
+                android:padding="10dp"
+                android:text="Php"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/segoeui"
+                android:textColor="#FFFFFF"
+                android:text="Amount You Earn"
+                android:paddingLeft="25dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/amountjob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/segoeui"
+                android:padding="10dp"
+                android:text="Rs. 300.00"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/accept"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button"
+                android:text="Accept"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/reject"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button"
+                android:backgroundTint="#eb3349"
+                android:text="Reject"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button"
+                android:backgroundTint="#eb3349"
+                android:text="Delete"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

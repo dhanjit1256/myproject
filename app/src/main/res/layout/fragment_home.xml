@@ -1,0 +1,270 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F2F2F2"
+    tools:context="com.example.DCompany.HomeFragment">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/mainframe"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/holydaypopup"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:visibility="gone"
+                    android:background="@drawable/homedesign">
+                    <TextView
+                        android:id="@+id/holydaytext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Today is  a holyday, Do you want to work from home"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:padding="15sp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_below="@+id/holydaytext"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/yeshollyday"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="Yes"
+                            android:backgroundTint="#146500"
+                            android:textSize="20dp"
+                            android:background="@drawable/button"
+                            android:textColor="#ffffff"/>
+                        <Button
+                            android:id="@+id/nohollyday"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+                            android:textSize="20dp"
+                            android:backgroundTint="#AA0606"
+                            android:layout_marginLeft="50dp"
+                            android:background="@drawable/button"
+                            android:textColor="#ffffff"/>
+                        <Button
+                            android:id="@+id/holidayupload"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Upload Work  Files"
+                            android:backgroundTint="#146500"
+                            android:paddingLeft="20dp"
+                            android:visibility="gone"
+                            android:paddingRight="20dp"
+                            android:textAllCaps="false"
+                            android:textSize="20dp"
+                            android:background="@drawable/button"
+                            android:textColor="#ffffff"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/holydaytext"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Select Your Reward"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/segoeui"
+                        android:textSize="20dp"/>
+                    <Button
+                        android:id="@+id/money"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Money"
+                        android:backgroundTint="#146500"
+                        android:textAllCaps="false"
+                        android:textSize="20dp"
+                        android:background="@drawable/button"
+                        android:textColor="#ffffff"/>
+                    <Button
+                        android:id="@+id/dayof"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Add one day off"
+                        android:backgroundTint="#146500"
+                        android:layout_marginTop="20dp"
+                        android:textAllCaps="false"
+                        android:textSize="20dp"
+                        android:background="@drawable/button"
+                        android:textColor="#ffffff"/>
+                </LinearLayout>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="20sp"
+                        android:layout_marginRight="20sp"
+                        android:textColor="#0000FF"
+                        android:visibility="gone"
+                        android:fontFamily="@font/segoeui"
+                        android:id="@+id/generatelocation"/>
+
+                <Button
+                    android:id="@+id/loc"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/homebutton"
+                    android:backgroundTint="#00481F"
+                    android:fontFamily="@font/segoeui"
+                    android:text="Press to Submit Attendance"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+               <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/checkattendance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:backgroundTint="#052B78"
+                    android:background="@drawable/attendancebutton"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/attendaceiconhome"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Attendance History"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:layout_margin="5dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/segoeui"/>
+                </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="100dp"
+                       android:orientation="vertical"
+                       android:backgroundTint="#1B7805"
+                       android:layout_marginLeft="20dp"
+                       android:background="@drawable/attendancebutton"
+                       android:gravity="center">
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/holydaybuttonimg"/>
+                       <TextView
+                           android:layout_width="100dp"
+                           android:layout_height="wrap_content"
+                           android:text="Holyday
+                           List"
+                           android:textColor="#ffffff"
+                           android:textSize="15sp"
+                           android:gravity="center"
+                           android:layout_margin="5dp"
+                           android:textStyle="bold"
+                           android:fontFamily="@font/segoeui"/>
+                   </LinearLayout>
+                   <LinearLayout
+                       android:id="@+id/test"
+                       android:layout_width="wrap_content"
+                       android:layout_height="100dp"
+                       android:orientation="vertical"
+                       android:backgroundTint="#096487"
+                       android:layout_marginLeft="20dp"
+                       android:background="@drawable/attendancebutton"
+                       android:gravity="center">
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/holydaybuttonimg"/>
+                       <TextView
+                           android:layout_width="100dp"
+                           android:layout_height="wrap_content"
+                           android:text="Leave
+                           Request"
+                           android:textColor="#ffffff"
+                           android:textSize="15sp"
+                           android:gravity="center"
+                           android:layout_margin="5dp"
+                           android:textStyle="bold"
+                           android:fontFamily="@font/segoeui"/>
+                   </LinearLayout>
+
+
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="400dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/design1home">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Today is a holyday, Do you want to work from home !"
+                            android:textColor="#ffffff"
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:layout_margin="20dp"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+</FrameLayout>

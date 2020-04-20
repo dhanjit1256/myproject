@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#020E3E"
+        android:paddingBottom="20sp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/xmainnavbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#020E3E"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#ffffff"
+        app:itemIconSize="25dp"
+        app:menu="@menu/main_nevbar_menu" />
+
+    <FrameLayout
+        android:id="@+id/xmainframe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/xmainnavbar">
+
+
+    </FrameLayout>
+
+
+</LinearLayout>
+

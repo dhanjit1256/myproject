@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.DCompany.Admin.Addemployee">
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="#051251"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Regester Employee"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fill all the filds to add new employee"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/regsteremp"
+                android:text="Remove Employee"/>
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/regsteremp"
+                android:text="Employee List"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/regsteremp"
+        android:layout_marginTop="220dp"
+        android:padding="30dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/successmsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonborder"
+            android:backgroundTint="#D1F1D1"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <ImageView
+                android:onClick="closesuccessmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/close"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/regsteremp"
+                android:layout_marginRight="20sp"/>
+            <TextView
+                android:id="@+id/successtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingBottom="20dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="#056102"
+                android:text="Great! Employee has been added to database succesfully."/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/errormsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/errordesign"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <ImageView
+                android:onClick="closesuccessmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/close"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/regsteremp"
+                android:layout_marginRight="20sp"/>
+            <TextView
+                android:id="@+id/errortext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingBottom="20dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/red"/>
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/namefild"
+            android:layout_width="match_parent"
+            android:textColorHint="#062059"
+            app:errorEnabled="true"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/namevalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#76E1A6"
+                android:hint="Employee Name"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phonefild"
+            android:layout_width="match_parent"
+            android:textColorHint="#062059"
+            app:errorEnabled="true"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/phonevalue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#76E1A6"
+                android:inputType="number"
+                android:hint="Phone Number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <RadioGroup
+            android:id="@+id/gendergroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender : "
+                android:textSize="20dp"
+                android:textColor="#062059"/>
+            <RadioButton
+                android:id="@+id/Male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Male"/>
+            <RadioButton
+                android:id="@+id/Femail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Femail"/>
+        </RadioGroup>
+        <TextView
+            android:id="@+id/errorgender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plese Select Employee's Gender"
+            android:visibility="gone"
+            android:textColor="#7E0505"/>
+
+
+        <LinearLayout
+            android:id="@+id/showdatepickerlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DOB : "
+                android:textSize="20dp"
+                android:textColor="#062059"/>
+            <TextView
+                android:id="@+id/showdate"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:onClick="showpicdate"
+                android:hint="Tap to select"
+                android:drawableLeft="@drawable/dateblack"
+                android:padding="10dp"
+                android:drawablePadding="5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/buttonborder"
+                android:textSize="20dp"
+                android:textColor="#062059"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/doberror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Plese Select Employee's Date Of Birth"
+            android:textColor="#7E0505"/>
+        <Button
+            android:onClick="addemployee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Employee"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/buttonborder"
+            android:textColor="#022849"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/segoeui"/>
+
+
+    </LinearLayout>
+    </RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:padding="20sp"
+            android:backgroundTint="#022F47"
+            android:background="@drawable/button"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:text="Regester Employee"
+                android:textSize="25sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:maxLines="1"
+                android:inputType="phone"
+                android:background="@drawable/regsteremp"
+                android:hint="Phone Number"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/ic_phone_black_24dp"
+                android:drawablePadding="10dp"
+                android:backgroundTint="#ffffff"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="150dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D50909"
+            android:textColor="#ffffff"
+            android:padding="10dp"
+            android:background="@drawable/regsteremp"
+            android:text="Cancal"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#006805"
+            android:textColor="#ffffff"
+            android:padding="10dp"
+            android:background="@drawable/regsteremp"
+            android:text="Regester"/>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
